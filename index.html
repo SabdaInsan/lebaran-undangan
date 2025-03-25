@@ -18,7 +18,8 @@
     }
 
     h2 {
-      font-family: 'Great Vibes', 'Dancing Script', cursive;
+      font-family: Scheherazade New', ' Amiri', serif;
+
     }
 
     .container {
@@ -211,6 +212,11 @@
         margin: 5px 0;
       }
     }
+
+    .icon-text {
+      display: flex;
+      align-items: center;
+    }
   </style>
 </head>
 
@@ -241,45 +247,55 @@
     <div class="hero-image"></div>
 
     <!-- Susunan Acara dengan Gambar -->
-    <div class="schedule">
-      <h2 style="color: #2e7d32; margin-bottom: 20px;">Susunan Acara</h2>
-      <!-- Kegiatan 1 - Baca Doa -->
-      <div class="schedule-item">
-        <img src="images/salam.jpg" alt="Baca Doa" class="schedule-image">
-        <div>
-          <h3>Sambutan dan Doa Bersama</h3>
-          <p style="text-align: justify; word-spacing: -0.1px; hyphens: auto; font-size: 15px;"><i class="fas fa-clock"
-              style="color: #2e7d32;"></i> 11.00 WIB<br>
-            <i class="fas fa-hands-praying" style="color: #2e7d32;"></i> Di bawah langit penuh harapan, kita rangkai doa
-            tulus, menyambut fajar dengan kehangatan yang menenangkan jiwa.
-          </p>
+    <div class="schedule-item">
+      <img src="images/salam.jpg" alt="Baca Doa" class="schedule-image">
+      <div>
+        <div class="icon-text" style="display: flex; align-items: center;">
+          <i class="fas fa-hands-praying" style="color: #2e7d32; margin-right: 5px; font-size: 18px;"></i>
+          <h3 style="margin: 0;">Sambutan dan Doa Bersama</h3>
         </div>
+        <p style="text-align: justify; word-spacing: -0.1px; hyphens: auto; font-size: 15px;">
+          <i class="fas fa-clock" style="color: #2e7d32; font-size: 18px;"></i>
+          11:00 WIB<br>
+          Di bawah langit penuh harapan, kita rangkai doa tulus, menyambut lebaran dengan kehangatan yang menenangkan
+          jiwa.
+        </p>
       </div>
+    </div>
 
-      <!-- Kegiatan 2 - Makan Siang Bersama -->
-      <div class="schedule-item">
-        <img src="images/makan.jpg" alt="Makan Bersama" class="schedule-image">
-        <div>
-          <h3>Makan Siang Bersama</h3>
-          <p style="text-align: justify; word-spacing: -0.1px; font-size: 15px;"><i class="fas fa-clock" style="color: #2e7d32;"></i>
-            11.0 WIB<br>
-            <i class="fas fa-utensils" style="color: #2e7d32;"></i> Di antara gelak tawa dan cerita yang mengalun,
-            setiap suapan adalah simfoni kehangatan yang menyatukan hati.
-          </p>
+
+
+
+    <!-- Kegiatan 2 - Makan Siang Bersama -->
+    <div class="schedule-item">
+      <img src="images/makan.jpg" alt="Baca Doa" class="schedule-image">
+      <div>
+        <div class="icon-text" style="display: flex; align-items: center;">
+          <i class="fas fa-utensils" style="color: #2e7d32; margin-right: 5px; font-size: 18px;"></i>
+          <h3 style="margin: 0;">Makan Siang Bersama</h3>
         </div>
+        <p style="text-align: justify; word-spacing: -0.1px; font-size: 15px;">
+          <i class="fas fa-clock" style="color: #2e7d32; font-size: 18px;"></i>
+          11:30 WIB<br>
+          Di antara gelak tawa dan cerita yang mengalun, setiap suapan adalah simfoni kehangatan yang menyatukan hati.
+        </p>
       </div>
+    </div>
 
-      <!-- Kegiatan 3 - Seru-seruan -->
-      <div class="schedule-item">
-        <img src="images/kado.jpg" alt="Seru-seruan" class="schedule-image">
-        <div>
-          <h3>Penarikan Doorprize</h3>
-          <p style="text-align: justify; word-spacing: -0.1px; font-size: 15px;"><i class="fas fa-clock" style="color: #2e7d32;"></i>
-            12.00 WIB<br>
-            <i class="fas fa-gamepad" style="color: #2e7d32;"></i> Setiap hadiah adalah kilau harapan, menyulut senyum
-            dalam setiap detik, membawa keajaiban dalam setiap undian.
-          </p>
+    <!-- Kegiatan 3 - Seru-seruan -->
+    <div class="schedule-item">
+      <img src="images/kado.jpg" alt="Baca Doa" class="schedule-image">
+      <div>
+        <div class="icon-text" style="display: flex; align-items: center;">
+          <i class="fas fa-gamepad" style="color: #2e7d32; margin-right: 5px; font-size: 18px;"></i>
+          <h3 style="margin: 0;">Penarikan Doorprize</h3>
         </div>
+        <p style="text-align: justify; word-spacing: -0.1px; font-size: 15px;">
+          <i class="fas fa-clock" style="color: #2e7d32; font-size: 18px;"></i>
+          12:00 WIB<br>
+          Setiap hadiah adalah kilau harapan, menyulut senyum
+          dalam setiap detik, membawa keajaiban dalam setiap undian.
+        </p>
       </div>
     </div>
 
@@ -287,15 +303,16 @@
     <h2 style="color: #2e7d32; margin-bottom: 20px;">Peta Lokasi</h2>
     <div class="map-container">
       <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.125300449488!2d108.55124877515665!3d-6.754570666049283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f1dbbbf421117%3A0x7af96262dd0a2518!2sJl.%20Biola%20No.17%2C%20Kecapi%2C%20Kec.%20Harjamukti%2C%20Kota%20Cirebon%2C%20Jawa%20Barat%2045142!5e0!3m2!1sen!2sid!4v1742881885806!5m2!1sen!2sid"
-    width="600" height="450" style="border:0;" allowfullscreen=""
-    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.125300449488!2d108.55124877515665!3d-6.754570666049283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f1dbbbf421117%3A0x7af96262dd0a2518!2sJl.%20Biola%20No.17%2C%20Kecapi%2C%20Kec.%20Harjamukti%2C%20Kota%20Cirebon%2C%20Jawa%20Barat%2045142!5e0!3m2!1sen!2sid!4v1742881885806!5m2!1sen!2sid"
+        width="600" height="450" style="border:0;" allowfullscreen=""
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <!-- Bagian Penutup -->
     <div class="closing-section">
       <h2 style="margin-bottom: 15px; color: #c3ffc6;">Taqabbalallahu Minna Wa Minkum Minal Aidin Wal Faizin</h2>
-      <p style="font-size: 15px;">"Besar harapan kami, agar keluarga dapat hadir dalam acara ini. Terima Kasih atas kehadirannya."</p>
+      <p style="font-size: 15px;">"Besar harapan kami, agar keluarga dapat hadir dalam acara ini. Terima Kasih atas
+        kehadirannya."</p>
       <h3 style="margin-bottom: 15px;">Hormat kami, <br>Cuncun sekeluarga.</h3>
       <div style="margin-top: 20px;">
         <i class="fas fa-hands-praying" style="font-size: 40px; opacity: 0.8;"></i>
@@ -307,10 +324,10 @@
   <footer>
     <div class="footer-content">
       <div class="footer-credit">
-        <p style="font-size: 14px;">© 2025 Eid Mubarak Invitation. All rights reserved.</p>
+        <p style="font-size: 15px;">© 2025 Eid Mubarak Invitation. All rights reserved.</p>
         <p style="font-size: 14px;">Designed and developed by Sabda with ❤️</p>
         <div class="footer-links">
-          <a href="https://wa.me/62895800808248" style="font-size: 14px;">Contact</a>
+          <a href="https://wa.me/62895800808248" style="font-size: 15px;">Contact</a>
         </div>
       </div>
     </div>
